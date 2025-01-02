@@ -1,3 +1,5 @@
+// const b1 = document.querySelector(".b1");
+// b1.classList.toggle("b1") = false;
 window.addEventListener("load", () => {
     const box = document.querySelector(".box");
     const b1 = document.querySelector(".b1");
@@ -25,8 +27,7 @@ window.addEventListener("load", () => {
     }, 3000);
 });
 
-const b1 = document.querySelector(".b1");
-b1.addEventListener("mouseover", () => {
+let ab = b1.addEventListener("mouseover", () => {
     b1.style.transition = "transform 0.1s ease-in-out"; 
     b1.style.transform = "scale(1.1)";
 });

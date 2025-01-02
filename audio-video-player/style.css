@@ -10,19 +10,18 @@ body
 .container
 {
     width: 90vw;
-    height: 80vh;
+    height: 90vh;
     position: relative;
     margin: 30px;
     box-sizing: border-box;
     border: 10px;
     border-radius: 40px;
     justify-content: center;
-    /* align-content: center; */
     display: grid;
     grid-template-areas: "nav nav nav"
                          "g1 g2 g3"
                          "d1 d2 d3";
-    grid-template-rows: 40vh 10vh 10vh;
+    grid-template-rows: 30vh 10vh 10vh;
     grid-template-columns: 140px 120px 140px;
 
 }
@@ -35,6 +34,7 @@ body
     display: flex;
     justify-content: center;
     align-content: center;
+    box-sizing: border-box;
     color: rgba(240, 248, 255, 0);
     transition-property: all;
     transition-duration: 3s;
@@ -56,7 +56,7 @@ body
     background: #130f30;
     width: 140px;
     opacity: 0;
-    height: 100px;
+    height: 80px;
     border: 2px;
     border-radius: 30px;
 }
@@ -75,16 +75,16 @@ body
     background: #130f30;
     opacity: 0;
     width: 140px;
-    height: 100px;
+    height: 80px;
     border: 2px;
     border-radius: 30px;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .container {
-    background: linear-gradient(45deg, skyblue 35%, white 50%, skyblue 65%);
-    background-size: 400% 400%; /* Makes the gradient large enough to move */
-    animation: gradient 5s ease-in-out alternate infinite; /* Smooth infinite animation */
+    background: linear-gradient(45deg, skyblue 35%, rgb(255, 255, 255) 50%, skyblue 65%);
+    background-size: 400% 400%; 
+    animation: gradient 5s ease-in-out alternate infinite;
 }
 
 @keyframes gradient {
