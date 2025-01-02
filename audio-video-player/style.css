@@ -14,7 +14,6 @@ body
     position: relative;
     margin: 30px;
     box-sizing: border-box;
-    background:linear-gradient(skyblue, white);
     border: 10px;
     border-radius: 40px;
     justify-content: center;
@@ -25,6 +24,7 @@ body
                          "d1 d2 d3";
     grid-template-rows: 40vh 10vh 10vh;
     grid-template-columns: 140px 120px 140px;
+
 }
 
 .box
@@ -81,7 +81,20 @@ body
     position: fixed;
 }
 
-.b1.hovered {
-    transform: scale(1.2);
-    background-color: lightblue;
+.container {
+    background: linear-gradient(45deg, skyblue 35%, white 50%, skyblue 65%);
+    background-size: 400% 400%; /* Makes the gradient large enough to move */
+    animation: gradient 5s ease-in-out alternate infinite; /* Smooth infinite animation */
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
 }
