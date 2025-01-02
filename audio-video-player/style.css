@@ -98,3 +98,23 @@ body
         background-position: 50% 100%;
     }
 }
+
+.audio
+{
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    grid-area: d1;
+    width: 150px;
+    padding: 30px;
+}
+
+.audio audio {
+
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #130f30;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
