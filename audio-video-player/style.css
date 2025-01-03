@@ -101,6 +101,18 @@ body
     border-radius: 50px;
 }
 
+.anib2
+{
+    grid-area: g3;
+    display: none;
+    background: #130f30;
+    width: 10px;
+    align-self: center;
+    justify-self: center;
+    height: 10px;
+    border-radius: 50px;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 100%;

@@ -2,6 +2,8 @@ const box = document.querySelector(".box");
 const b1 = document.querySelector(".b1");
 const b2 = document.querySelector(".b2");
 const anib1 = document.querySelector(".anib1");
+const anib2 = document.querySelector(".anib2");
+
 
 window.addEventListener("load", () => 
 {
@@ -47,7 +49,7 @@ b1.addEventListener("click", () => {
     setTimeout(() => 
     {
         anib1.style.transition = "transform 0.5s ease-in-out"; 
-        anib1.style.transform = "scale(120)";
+        anib1.style.transform = "scale(200)";
 
     }, 500);
     setTimeout(() => 
@@ -57,5 +59,23 @@ b1.addEventListener("click", () => {
         b2.style.display = "none";
         anib1.style.transition = "transform 0.5s ease-in-out 1s"; 
         anib1.style.transform = "scale(0)";
+    }, 1000);
+});
+
+b2.addEventListener("click", () => {
+    anib2.style.display = "block";
+    setTimeout(() => 
+    {
+        anib2.style.transition = "transform 0.5s ease-in-out"; 
+        anib2.style.transform = "scale(200)";
+
+    }, 500);
+    setTimeout(() => 
+    {
+        box.style.display = "none";
+        b1.style.display = "none";
+        b2.style.display = "none";
+        anib2.style.transition = "transform 0.5s ease-in-out 1s"; 
+        anib2.style.transform = "scale(0)";
     }, 1000);
 });
