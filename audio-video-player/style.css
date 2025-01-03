@@ -23,6 +23,7 @@ body
                          "d1 d2 d3";
     grid-template-rows: 30vh 10vh 10vh;
     grid-template-columns: 140px 120px 140px;
+    /* display: block; */
 
 }
 
@@ -79,12 +80,25 @@ body
     border: 2px;
     border-radius: 30px;
     /* position: fixed; */
+    /* transition: ; */
 }
 
 .container {
     background: linear-gradient(45deg, skyblue 35%, rgb(255, 255, 255) 50%, skyblue 65%);
     background-size: 400% 400%; 
     animation: gradient 5s ease-in-out alternate infinite;
+}
+
+.anib1
+{
+    grid-area: g1;
+    display: none;
+    background: #130f30;
+    width: 10px;
+    align-self: center;
+    justify-self: center;
+    height: 10px;
+    border-radius: 50px;
 }
 
 @keyframes gradient {
@@ -97,24 +111,4 @@ body
     100% {
         background-position: 50% 100%;
     }
-}
-
-.audio
-{
-    justify-content: center;
-    align-content: center;
-    justify-self: center;
-    grid-area: d1;
-    width: 150px;
-    padding: 30px;
-}
-
-.audio audio {
-
-    width: 100%;
-    max-width: 300px;
-    border: 2px solid #130f30;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
