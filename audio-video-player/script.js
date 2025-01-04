@@ -4,6 +4,7 @@ const b2 = document.querySelector(".b2");
 const anib1 = document.querySelector(".anib1");
 const anib2 = document.querySelector(".anib2");
 const aud = document.querySelector(".audio");
+const vid = document.querySelector(".video");
 const bbrl = document.querySelector(".bor-blr");
 
 
@@ -76,6 +77,8 @@ b2.addEventListener("click", () => {
     }, 500);
     setTimeout(() => 
     {
+        vid.style.display = "block";
+        bbrl.style.display = "block";
         box.style.display = "none";
         b1.style.display = "none";
         b2.style.display = "none";

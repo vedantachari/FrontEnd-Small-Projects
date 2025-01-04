@@ -157,6 +157,33 @@ body
     padding-bottom: 15px;
 }
 
+.video
+{
+    display: none;
+    background-color: #130f30;
+    grid-area: g2;
+    height: 400px;
+    padding: 20px;
+    border-radius: 50px;
+    overflow: auto;
+    box-sizing:border-box;
+    justify-self: center;
+    /* grid-row: 1/3; */
+    scrollbar-width: none;
+}
+
+.video h1
+{
+    font-family: 'Roboto';
+    color: aliceblue;
+    text-align: center;
+}
+
+.video video
+{
+    padding-bottom: 15px;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 100%;
