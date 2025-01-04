@@ -20,8 +20,9 @@ body
     display: grid;
     grid-template-areas: "nav nav nav"
                          "g1 g2 g3"
-                         "d1 d2 d3";
-    grid-template-rows: 30vh 10vh 10vh;
+                         "d1 d2 d3"
+                         "r1 r2 r3";
+    grid-template-rows: 20vh 10vh 10vh 10vh;
     grid-template-columns: 140px 120px 140px;
     /* display: block; */
 
@@ -40,7 +41,7 @@ body
     transition-property: all;
     transition-duration: 3s;
     transition-timing-function:ease-in-out;
-    grid-area: g2;
+    grid-area: d2;
 }
 
 .b1
@@ -53,7 +54,7 @@ body
     font-weight: 800;
     font-size: 30px;
     color:azure;
-    grid-area: g1;
+    grid-area: d1;
     background: #130f30;
     width: 140px;
     opacity: 0;
@@ -72,7 +73,7 @@ body
     font-weight: 800;
     font-size: 30px;
     color:azure;
-    grid-area: g3;
+    grid-area: d3;
     background: #130f30;
     opacity: 0;
     width: 140px;
@@ -91,7 +92,7 @@ body
 
 .anib1
 {
-    grid-area: g1;
+    grid-area: d1;
     display: none;
     background: #130f30;
     width: 10px;
@@ -103,7 +104,7 @@ body
 
 .anib2
 {
-    grid-area: g3;
+    grid-area: d3;
     display: none;
     background: #130f30;
     width: 10px;
@@ -113,17 +114,35 @@ body
     border-radius: 50px;
 }
 
+.bor-blr
+{
+    display: none;
+    background-color: #130f30;
+    box-shadow: 0 0 5px 10px #130f30; 
+    grid-area: g2;
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 50px;
+    overflow: auto;
+    box-sizing:border-box;
+    justify-self: center;
+    scrollbar-width: none;
+}
+
 .audio
 {
     display: none;
-    background-color: navy; 
+    background-color: #130f30;
     grid-area: g2;
     height: 400px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 50px;
     overflow: auto;
-    box-sizing: border-box;
+    box-sizing:border-box;
     justify-self: center;
+    /* grid-row: 1/3; */
+    scrollbar-width: none;
 }
 
 .audio h1
