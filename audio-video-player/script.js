@@ -3,6 +3,7 @@ const b1 = document.querySelector(".b1");
 const b2 = document.querySelector(".b2");
 const anib1 = document.querySelector(".anib1");
 const anib2 = document.querySelector(".anib2");
+const aud = document.querySelector(".audio");
 
 
 window.addEventListener("load", () => 
@@ -54,10 +55,11 @@ b1.addEventListener("click", () => {
     }, 500);
     setTimeout(() => 
     {
+        aud.style.display = "block";
         box.style.display = "none";
         b1.style.display = "none";
         b2.style.display = "none";
-        anib1.style.transition = "transform 0.5s ease-in-out 1s"; 
+        anib1.style.transition = "transform 0.5s ease-in-out"; 
         anib1.style.transform = "scale(0)";
     }, 1000);
 });
@@ -75,7 +77,8 @@ b2.addEventListener("click", () => {
         box.style.display = "none";
         b1.style.display = "none";
         b2.style.display = "none";
-        anib2.style.transition = "transform 0.5s ease-in-out 1s"; 
+
+        anib2.style.transition = "transform 0.5s ease-in-out"; 
         anib2.style.transform = "scale(0)";
     }, 1000);
 });

@@ -113,6 +113,31 @@ body
     border-radius: 50px;
 }
 
+.audio
+{
+    display: none;
+    background-color: navy; 
+    grid-area: g2;
+    height: 400px;
+    padding: 30px;
+    border-radius: 50px;
+    overflow: auto;
+    box-sizing: border-box;
+    justify-self: center;
+}
+
+.audio h1
+{
+    font-family: 'Roboto';
+    color: aliceblue;
+    text-align: center;
+}
+
+.audio audio
+{
+    padding-bottom: 15px;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 100%;
