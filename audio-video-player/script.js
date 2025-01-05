@@ -6,6 +6,9 @@ const anib2 = document.querySelector(".anib2");
 const aud = document.querySelector(".audio");
 const vid = document.querySelector(".video");
 const bbrl = document.querySelector(".bor-blr");
+const aback = document.querySelector(".aback");
+const vback = document.querySelector(".vback");
+
 
 
 window.addEventListener("load", () => 
@@ -87,3 +90,15 @@ b2.addEventListener("click", () => {
         anib2.style.transform = "scale(0)";
     }, 1000);
 });
+
+aback.addEventListener("click", ()=>
+{
+    setTimeout(() => 
+    {
+            aud.style.display = "none";
+            bbrl.style.display = "none";
+            box.style.display = "grid";
+            b1.style.display = "grid";
+            b2.style.display = "grid";
+    }, 500);
+})

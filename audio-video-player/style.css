@@ -132,7 +132,7 @@ body
 
 .audio
 {
-    /* display: none; */
+    display: none;
     background-color: #130f30;
     grid-area: g2;
     height: 400px;
