@@ -9,8 +9,6 @@ const bbrl = document.querySelector(".bor-blr");
 const aback = document.querySelector(".aback");
 const vback = document.querySelector(".vback");
 
-
-
 window.addEventListener("load", () => 
 {
    
@@ -96,6 +94,18 @@ aback.addEventListener("click", ()=>
     setTimeout(() => 
     {
             aud.style.display = "none";
+            bbrl.style.display = "none";
+            box.style.display = "grid";
+            b1.style.display = "grid";
+            b2.style.display = "grid";
+    }, 500);
+})
+
+vback.addEventListener("click", ()=>
+{
+    setTimeout(() => 
+    {
+            vid.style.display = "none";
             bbrl.style.display = "none";
             box.style.display = "grid";
             b1.style.display = "grid";
