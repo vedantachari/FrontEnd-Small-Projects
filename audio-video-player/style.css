@@ -18,10 +18,10 @@ body
     border-radius: 40px;
     justify-content: center;
     display: grid;
-    grid-template-areas: "nav nav nav"
-                         "g1 g2 g3"
-                         "d1 d2 d3"
-                         "r1 r2 r3";
+    grid-template-areas: "nav nav nav "
+                         "g1 g2 g3 "
+                         "d1 d2 d3 "
+                         "r1 r2 r3 ";
     grid-template-rows: 20vh 10vh 10vh 10vh;
     grid-template-columns: 140px 120px 140px;
     /* display: block; */
