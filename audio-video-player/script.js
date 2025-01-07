@@ -85,7 +85,7 @@ b2.addEventListener("click", () => {
         b2.style.display = "none";
 
         anib2.style.transition = "transform 0.5s ease-in-out"; 
-        anib2.style.transform = "scale(0)";
+        anib2.style.transform = " scale(0) ";
     }, 1000);
 });
 
