@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.calclayout
+{
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+    margin: 30px;
+    box-sizing: border-box;
+    border: 10px;
+    border-radius: 40px;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "nav nav nav nav"
+                         "but1 but2 but3 but4"
+                         "but5 but6 but7 but8"
+                         "but8 but9 but10 but11"
+                         "but12 but13 but14 but15"
+                         "but16 but17 but18 but15";
+}
+div
+{
+    border: 2px solid;
+}
+.but1 div
+{
+    grid-area: but12;
+} 
+
+.but2 div
+{
+    grid-area: but13;
+}
+.but3 div
+{
+    grid-area: but14;
+}
+.but4 div
+{
+    grid-area: but8;
+}
+.but5 div
+{
+    grid-area: but9;
+}
+.but6 div
+{
+    grid-area: but10;
+}
+.but7 div
+{
+    grid-area: but5;
+}
+.but8 div
+{
+    grid-area: but6;
+}
+.but9 div
+{
+    grid-area: but7;
+}
+.but0 div
+{
+    grid-area: but17;
+}
+.butx div
+{
+    grid-area: but4;
+}
+.butadd div
+{
+    grid-area: but11;
+}
+.butsub div
+{
+    grid-area: but8;
+}
+.butdiv div
+{
+    grid-area: but3;
+}
+.buteq div
+{
+    grid-area: but15;
+}
+.butper div
+{
+    grid-area: but2;
+}
+.butdt div
+{
+    grid-area: but18;
+}
+.butAC div
+{
+    grid-area: but16;
+}
+.butD div
+{
+    grid-area: but1;
+}
