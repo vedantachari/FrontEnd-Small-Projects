@@ -1,110 +1,114 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-body
-{
+body {
     margin: 0;
     padding: 0;
     display: flex;
-    align-content: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
 }
 
-.calclayout
-{
-    width: 90vw;
-    height: 90vh;
-    position: relative;
-    margin: 30px;
-    box-sizing: border-box;
-    border: 10px;
-    border-radius: 40px;
-    justify-content: center;
+.calclayout {
+    width: 300px;
+    height: 400px;
     display: grid;
-    grid-template-areas: "nav nav nav nav"
-                         "but1 but2 but3 but4"
-                         "but5 but6 but7 but8"
-                         "but8 but9 but10 but11"
-                         "but12 but13 but14 but15"
-                         "but16 but17 but18 but15";
-}
-div
-{
-    border: 2px solid;
-}
-.but1 div
-{
-    grid-area: but12;
-} 
+    grid-template-areas: 
+    "nav nav nav nav"
+    "butD butper butdiv butx"
+    "but7 but8 but9 butsub"
+    "but4 but5 but6 butadd"
+    "but1 but2 but3 buteq"
+    "butAC but0 butdt buteq";
+    justify-content: center;
+    align-items: center;
+    /* grid-template-rows: 20vh 10vh 10vh 10vh; */
+    grid-template-columns: 80px 80px 80px 80px;
 
-.but2 div
-{
-    grid-area: but13;
 }
-.but3 div
-{
-    grid-area: but14;
+
+.calclayout div{
+    padding: 20px;
+    margin: 10px;
+    background-color: aquamarine;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.but4 div
-{
-    grid-area: but8;
+
+.but1{
+    grid-area: but1;
 }
-.but5 div
-{
-    grid-area: but9;
-}
-.but6 div
-{
-    grid-area: but10;
-}
-.but7 div
-{
-    grid-area: but5;
-}
-.but8 div
-{
-    grid-area: but6;
-}
-.but9 div
-{
-    grid-area: but7;
-}
-.but0 div
-{
-    grid-area: but17;
-}
-.butx div
-{
-    grid-area: but4;
-}
-.butadd div
-{
-    grid-area: but11;
-}
-.butsub div
-{
-    grid-area: but8;
-}
-.butdiv div
-{
-    grid-area: but3;
-}
-.buteq div
-{
-    grid-area: but15;
-}
-.butper div
-{
+
+.but2{
     grid-area: but2;
 }
-.butdt div
-{
-    grid-area: but18;
+.but3{
+    grid-area: but3;
 }
-.butAC div
-{
-    grid-area: but16;
+.but4{
+    grid-area: but4;
 }
-.butD div
+.but5{
+    grid-area: but5;
+}
+.but6{
+    grid-area: but6;
+}
+.but7{
+    grid-area: but7;
+}
+.but8{
+    grid-area: but8;
+}
+.but9{
+    grid-area: but9;
+}
+.but0{
+    grid-area: but0;
+}
+.butAC{
+    grid-area: butAC;
+}
+.butdt{
+    grid-area: butdt;
+}
+.buteq{
+    grid-area: buteq;
+    height: 100px;
+    align-content: center;
+    /* grid-row: 1/8; */
+}
+.butadd
 {
-    grid-area: but1;
+    grid-area: butadd;
+}
+.butsub
+{
+    grid-area: butsub;
+}
+.butx
+{
+    grid-area: butx;
+}
+.butdiv
+{
+    grid-area: butdiv;
+}
+.butper
+{
+    grid-area: butper;
+}
+.butD
+{
+    grid-area: butD;
+}
+.nac
+{
+    grid-area: nav;
 }
