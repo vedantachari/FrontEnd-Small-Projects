@@ -13,9 +13,13 @@ body {
 }
 
 .calclayout {
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 610px;
     display: grid;
+    background-color: #1E1E1E;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 10px;
     grid-template-areas: 
     "nav nav nav nav"
     "butD butper butdiv butx"
@@ -23,28 +27,50 @@ body {
     "but4 but5 but6 butadd"
     "but1 but2 but3 buteq"
     "butAC but0 butdt buteq";
+    row-gap: 6px;
+    column-gap: 6px;
     justify-content: center;
     align-items: center;
-    /* grid-template-rows: 20vh 10vh 10vh 10vh; */
+    box-sizing: border-box;
+    /* grid-template-rows: 20vh 10vh 10vh 10vh 10vh 10vh */
+    grid-template-rows: 145px 74px 74px 74px 74px 74px;
     grid-template-columns: 80px 80px 80px 80px;
+    padding-bottom: 0;
 
 }
 
 .calclayout div{
-    padding: 20px;
+    color: aliceblue;
+    font-size: 24px;
+    font-family:'Roboto';
+    padding: 15px;
     margin: 10px;
-    background-color: aquamarine;
+    z-index: 1;
+    /* background-color: rgb(127, 229, 255); */
     border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-
+.calclayout .na
+{
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    width: 400px;
+    height: 450px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    position:absolute;
+    align-self:flex-end;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    background-color: #27292E;
+}
 .but1{
     grid-area: but1;
 }
-
 .but2{
     grid-area: but2;
 }
@@ -72,42 +98,58 @@ body {
 .but0{
     grid-area: but0;
 }
-.butAC{
+.calclayout .butAC{
     grid-area: butAC;
+    color: #ED0E98;
 }
 .butdt{
     grid-area: butdt;
 }
 .buteq{
     grid-area: buteq;
-    height: 100px;
+    height: 112px;
     align-content: center;
+    background: linear-gradient(#ED0E98, #fe572d);
+    box-shadow: 0px 0px 10px 0 #ED0E98,
+                0 0px 10px 0px #ed810e;
     /* grid-row: 1/8; */
 }
 .butadd
 {
     grid-area: butadd;
+    background-color: #3d4048;
+
 }
 .butsub
 {
     grid-area: butsub;
+    background-color: #3d4048;
+
 }
 .butx
 {
     grid-area: butx;
+    background-color: #3d4048;
+
 }
 .butdiv
 {
     grid-area: butdiv;
+    background-color: #3d4048;
+
 }
 .butper
 {
     grid-area: butper;
+    background-color: #3d4048;
+
 }
 .butD
 {
     grid-area: butD;
+    border: 2px solid #3d4048;
 }
+
 .nac
 {
     grid-area: nav;
