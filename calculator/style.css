@@ -43,7 +43,7 @@ body {
     color: aliceblue;
     font-size: 24px;
     font-family:'Roboto';
-    padding: 15px;
+    padding: 18px;
     margin: 10px;
     z-index: 1;
     /* background-color: rgb(127, 229, 255); */
@@ -68,6 +68,22 @@ body {
     justify-self: center;
     background-color: #27292E;
 }
+
+.calclayout .nums:hover
+{
+    background-color: #3d4048;
+    height: 23px;
+}
+
+.calclayout .opr
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    height: 23px;
+    align-items: center;
+    justify-content: center;
+}
+
 .but1{
     grid-area: but1;
 }
@@ -105,9 +121,9 @@ body {
 .butdt{
     grid-area: butdt;
 }
-.buteq{
+.calclayout .buteq{
     grid-area: buteq;
-    height: 112px;
+    height: 105px;
     align-content: center;
     background: linear-gradient(#ED0E98, #fe572d);
     box-shadow: 0px 0px 10px 0 #ED0E98,
@@ -118,7 +134,6 @@ body {
 {
     grid-area: butadd;
     background-color: #3d4048;
-
 }
 .butsub
 {
@@ -148,6 +163,8 @@ body {
 {
     grid-area: butD;
     border: 2px solid #3d4048;
+    height: 23px;
+
 }
 
 .nac
