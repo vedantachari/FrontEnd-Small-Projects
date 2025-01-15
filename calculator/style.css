@@ -38,6 +38,11 @@ body {
     padding-bottom: 0;
 
 }
+/* 
+.material-symbols-outlined
+{
+    color: black;
+} */
 
 .calclayout div{
     color: aliceblue;
@@ -71,9 +76,11 @@ body {
 
 .calclayout .nums:hover
 {
-    background-color: #3d4048;
+    background-color: #6d6d6d31;
     height: 23px;
 }
+
+
 
 .calclayout .opr
 {
@@ -121,7 +128,7 @@ body {
 .butdt{
     grid-area: butdt;
 }
-.calclayout .buteq{
+.calclayout .buteq {
     grid-area: buteq;
     height: 105px;
     align-content: center;
@@ -129,7 +136,9 @@ body {
     box-shadow: 0px 0px 10px 0 #ED0E98,
                 0 0px 10px 0px #ed810e;
     /* grid-row: 1/8; */
+    border: none;
 }
+
 .butadd
 {
     grid-area: butadd;
@@ -164,9 +173,7 @@ body {
     grid-area: butD;
     border: 2px solid #3d4048;
     height: 23px;
-
 }
-
 .nac
 {
     grid-area: nav;
