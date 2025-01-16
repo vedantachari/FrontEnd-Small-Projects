@@ -12,26 +12,27 @@
     </head>
     <body class="bod">
         <div class="calclayout">
+            <input type="text" id = "result">
             <div class="na"></div>
             <div class="nac"></div>
-            <div class="but1 nums">1</div>
-            <div class="but2 nums">2</div>
-            <div class="but3 nums">3</div>
-            <div class="but4 nums">4</div>
-            <div class="but5 nums">5</div>
-            <div class="but6 nums">6</div>
-            <div class="but7 nums">7</div>
-            <div class="but8 nums">8</div>
-            <div class="but9 nums">9</div>
-            <div class="but0 nums">0</div>
-            <div class="butx opr">×</div>
-            <div class="butadd opr">+</div>
-            <div class="butsub opr">-</div>
-            <div class="butdiv opr">÷</div>
-            <div class="butper opr">%</div>
-            <div class="buteq opr eq">=</div>
-            <div class="butdt nums">.</div>
-            <div class="butAC num">AC</div>
+            <div class="but1 nums" onclick="appendValue('1')">1</div>
+            <div class="but2 nums" onclick="appendValue('2')">2</div>
+            <div class="but3 nums" onclick="appendValue('3')">3</div>
+            <div class="but4 nums" onclick="appendValue('4')">4</div>
+            <div class="but5 nums" onclick="appendValue('5')">5</div>
+            <div class="but6 nums" onclick="appendValue('6')">6</div>
+            <div class="but7 nums" onclick="appendValue('7')">7</div>
+            <div class="but8 nums" onclick="appendValue('8')">8</div>
+            <div class="but9 nums" onclick="appendValue('9')">9</div>
+            <div class="but0 nums" onclick="appendValue('0')">0</div>
+            <div class="butx opr" onclick="appendValue('×')">×</div>
+            <div class="butadd opr" onclick="appendValue('+')">+</div>
+            <div class="butsub opr" onclick="appendValue('-')">-</div>
+            <div class="butdiv opr" onclick="appendValue('÷')">÷</div>
+            <div class="butper opr" onclick="appendValue('%')">%</div>
+            <div class="buteq opr eq " onclick="calculateResult()">=</div>
+            <div class="butdt nums" onclick="appendValue('.')">.</div>
+            <div class="butAC num" onclick="clearResult()">AC</div>
             <div class="butD opr"><span class="material-symbols-outlined">dark_mode</span></div>
         </div>
         <script src="script.js" async defer></script>

@@ -6,19 +6,20 @@ const op_box = document.querySelectorAll(".calclayout .opr");
 const eq_box = document.querySelector(".calclayout .eq");
 const bodi = document.querySelector(".bod");
 
-// const dh_box = document.querySelectorAll(".calclayout .nums");
+const resultField = document.getElementById('result');
 
 l_mode.addEventListener("click", () => {
-    if (l_mode.innerHTML == "dark_mode") {
+    if (l_mode.innerHTML == "dark_mode") 
+        {
         l_mode.innerHTML = "light_mode";
-        i_box.style.backgroundColor = "rgb(236, 236, 236)";
+        i_box.style.backgroundColor = "rgb(227, 227, 227)";
         o_box.style.backgroundColor = "#f5f5f5";
         bodi.style.background = "linear-gradient(135deg, rgb(172, 191, 206) 35%, rgb(212, 170, 203) 50%, rgb(222, 151, 229) 95%)";
         // bodi.style.animation = "gradient 5s ease-in-out alternate infinite"
+        resultField.style.color = "#27292E";
         d_box.forEach(element => 
         {
             element.style.color = "#000000";
-            
         });
         op_box.forEach(element => 
         {
@@ -33,8 +34,9 @@ l_mode.addEventListener("click", () => {
         l_mode.innerHTML = "dark_mode";
         i_box.style.backgroundColor = "#27292E";
         o_box.style.backgroundColor = "#1E1E1E";
-        bodi.style.background = "linear-gradient(135deg, rgb(9, 47, 78) 35%, rgb(14, 20, 68) 50%, rgb(106, 17, 17) 95%)";
+        bodi.style.background = "linear-gradient(135deg, rgb(9, 47, 78) 35%, rgb(14, 20, 68) 50%, rgb(139, 34, 34) 95%)";
         // bodi.style.animation = "gradient 5s ease-in-out alternate infinite";
+        resultField.style.color = "aliceblue";
         d_box.forEach(element => 
         {
             element.style.color = "#FFFFFF";
@@ -48,3 +50,19 @@ l_mode.addEventListener("click", () => {
         });
     }
 });
+
+function appendValue(value) {
+    resultField.value += value;
+  }
+  
+  function clearResult() {
+    resultField.value = '';
+  }
+  
+  function calculateResult() {
+    try {
+        resultField.value = eval(resultField.value);
+    } catch {
+      resultField.value = 'Error';
+    }
+  }

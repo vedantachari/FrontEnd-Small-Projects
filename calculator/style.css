@@ -13,6 +13,7 @@ body {
 
 }
 
+
 .bod
 {
     background: linear-gradient(135deg, rgb(9, 47, 78) 35%, rgb(14, 20, 68) 50%, rgb(106, 17, 17) 95%);
@@ -63,6 +64,18 @@ body {
 {
     color: black;
 } */
+
+input[type="text"] {
+    grid-area: nav;
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: left;
+    height: 60px;
+    font-size: 45px;
+    font-family: 'Roboto';
+  }
+
 
 .calclayout div{
     color: aliceblue;
