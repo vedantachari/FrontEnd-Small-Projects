@@ -5,7 +5,6 @@ const d_box = document.querySelectorAll(".calclayout .nums");
 const op_box = document.querySelectorAll(".calclayout .opr");
 const eq_box = document.querySelector(".calclayout .eq");
 const bodi = document.querySelector(".bod");
-
 const resultField = document.getElementById('result');
 
 l_mode.addEventListener("click", () => {
